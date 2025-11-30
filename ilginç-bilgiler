@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teknolojide İlginç Bilgiler</title>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #ffffff;
+        color: #222;
+        margin: 0;
+        padding: 0;
+        line-height: 1.7;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .fact {
+        background: #f6f6f6;
+        padding: 18px 20px;
+        border-radius: 10px;
+        margin-bottom: 18px;
+        border-left: 6px solid #4a90e2;
+    }
+
+    .fact strong {
+        font-size: 17px;
+    }
+
+    @media(max-width: 600px) {
+        h1 { font-size: 24px; }
+        .fact { font-size: 15px; }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>Teknolojide İlginç Bilgiler</h1>
+
+<div class="fact">
+    <strong>📱 Akıllı telefonunuz yüzünüzü matematiksel bir haritaya dönüştürüyor.</strong><br>
+    Modern yüz tanıma yazılımları, yüzünüzdeki her açıyı, eğimi, mesafeyi ve ışık yansımasını sayısal bir modele çevirir. Bu sayede cihazınızı saniyenin onda biri kadar kısa bir sürede tanıyabilir. Her yüz, yaklaşık 30.000 farklı nokta ile analiz edilir.
+</div>
+
+<div class="fact">
+    <strong>🎵 Netflix ve Spotify’daki önerilerin %90’ı yapay zekâ tarafından üretiliyor.</strong><br>
+    İzleme ve dinleme alışkanlıklarınız; saat, konum, ruh hali analizi, izleme süreleri ve atladığınız sahnelere kadar incelenir. Bu verilerden yüzlerce desen çıkaran yapay zekâ, size özel içerikler oluşturur.
+</div>
+
+<div class="fact">
+    <strong>📱 Sosyal medya akışınızı bir yapay zekâ yönetiyor.</strong><br>
+    Instagram, TikTok ve X (Twitter) akışları; beğenilerinize, izleme sürenize, durduğunuz saniyelere, hatta ekrana dokunma hızınıza göre şekillenir. Amaç, uygulamada daha uzun süre kalmanızdır.
+</div>
+
+<div class="fact">
+    <strong>✉️ Spam filtreleri, her e-postayı tarayan minik yapay zekâlardır.</strong><br>
+    E-posta içeriği, yazı stili, kelime seçimi, gönderici davranışı ve IP geçmişi analiz edilerek bir “spam skoru” verilir. Şüpheli e-postalar size ulaşmadan engellenir.
+</div>
+
+<div class="fact">
+    <strong>🗺️ Google Haritalar, milyonlarca kişinin anonim verisini analiz ederek trafik tahmini yapar.</strong><br>
+    Araç hızları, duraklamalar, yoğunluk artışları, yol kapama raporları ve uydu görüntüleri birleştirilerek tahminler saniyede bir güncellenir.
+</div>
+
+<div class="fact">
+    <strong>✍️ Grammarly gibi yazım araçları, kelime alışkanlıklarınızı öğrenir.</strong><br>
+    Yazı stiliniz, sık kullandığınız ifadeler ve cümle yapılarınız analiz edilerek daha doğal öneriler oluşturulur.
+</div>
+
+<div class="fact">
+    <strong>🚗 Modern araçlardaki otomatik fren ve şerit takibi yapay zekâ ile çalışır.</strong><br>
+    Araç, kameralar ve sensörlerle saniyede onlarca kare analiz eder ve tehlike durumunda sürücüden önce tepki verebilir.
+</div>
+
+<div class="fact">
+    <strong>🎙️ Akıllı asistanlar sesinizi “dijital bir parmak izine” dönüştürür.</strong><br>
+    Alexa, Google Asistan gibi sistemler, sesinizi tonu, nefes alışverişi ve ritmine göre tanır ve komutlarınızı anlık olarak işler.
+</div>
+
+<div class="fact">
+    <strong>🛒 Online alışverişteki “benzer ürün” önerileri dev veri analizleriyle oluşturulur.</strong><br>
+    Milyonlarca alışveriş davranışı incelenerek alıcıların eğilimleri çıkarılır ve size özel öneriler belirir.
+</div>
+
+<div class="fact">
+    <strong>🏦 Bankaların dolandırıcılık sistemleri yapay zekâ üzerine kuruludur.</strong><br>
+    Harcama alışkanlıklarınız öğrenilir ve olağan dışı bir hareket tespit edildiğinde sistem anında alarm verir.
+</div>
+
+<div class="fact">
+    <strong>🚘 Araç kiralama fiyatları yapay zekâ tarafından belirlenir.</strong><br>
+    Mevsim, saat, talep, bölge yoğunluğu ve geçmiş fiyatlara göre dinamik bir fiyatlandırma yapılır.
+</div>
+
+<div class="fact">
+    <strong>👁️ Görme engelliler için çalışan “gören uygulamalar” yapay zekâ ile nesne tanır.</strong><br>
+    Kamera görüntüsü analiz edilerek nesneler, insanlar, metinler hatta duygular sesli olarak tarif edilir.
+</div>
+
+<div class="fact">
+    <strong>🚗 Tesla'nın otonom sürüşü, etrafındaki dünyayı saniyede onlarca kez haritalandırır.</strong><br>
+    Araç, çevresindeki objeleri, mesafeleri, ışığı ve hızları anlık olarak işleyerek sürüş kararları verir.
+</div>
+
+<div class="fact">
+    <strong>📞 Çağrı merkezlerinin ilk karşılayan robotları yapay zekâdır.</strong><br>
+    Konuşma içeriğini analiz eden bot, sizi doğru departmana yönlendirir.
+</div>
+
+<div class="fact">
+    <strong>🔍 Google otomatik tamamlama, milyarlarca arama verisini analiz eden bir yapay zekâdır.</strong><br>
+    Siz yazarken arka planda popüler aramalar, bölgesel eğilimler ve kişisel geçmiş birleştirilir.
+</div>
+
+<div class="fact">
+    <strong>📸 Sosyal medyadaki fotoğraf etiketleme önerileri yüz tanıma yapay zekâsıyla oluşturulur.</strong><br>
+    Fotoğraftaki yüz hatları analiz edilerek tanıdığınız kişilerle eşleştirilir.
+</div>
+
+<div class="fact">
+    <strong>⛅ Hava durumu tahminleri yapay zekâ ile artık çok daha isabetli.</strong><br>
+    Atmosferdeki binlerce parametre anlık olarak işlenir ve tahminler her dakika güncellenir.
+</div>
+
+<div class="fact">
+    <strong>📨 Gmail’in “Akıllı Yanıt” özelliği konuşma bağlamını anlayabilen bir mini yapay zekâdır.</strong><br>
+    E-posta içeriğine göre uygun kısa cevaplar önerir.
+</div>
+
+<div class="fact">
+    <strong>🍽️ Restoranlarda kullanılan tablet sipariş sistemleri yapay zekâ ile tercih analizleri yapar.</strong><br>
+    Müşterilerin en çok neyi, ne zaman sipariş ettiği öğrenilir ve öneriler buna göre şekillenir.
+</div>
+
+<div class="fact">
+    <strong>📞 Google Asistan, komutları “doğal dil işleme” ile anlamlandırır.</strong><br>
+    Yıllarca eğitilen modeller sayesinde günlük konuşma dilinizi hatasız yorumlar.
+</div>
+
+</div>
+</body>
+</html>
