@@ -1,92 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bunları Biliyor Musun?</title>
+
 <style>
-  :root{
-    --bg: #ffffff;
-    --card: #fcfdff;
-    --muted: #6b7280;
-    --accent: #2563eb;
-    --shadow: 0 8px 20px rgba(16,24,40,0.06);
-    --radius: 12px;
-    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #0f1724;
-  }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background: #ffffff;
+        color: #222;
+    }
 
-  *{box-sizing:border-box}
-  html,body{height:100%;margin:0;background:var(--bg)}
-  body{
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    padding:20px;
-    display:flex;
-    justify-content:center;
-  }
+    .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+    }
 
-  .wrapper{
-    width:100%;
-    max-width:1100px;
-  }
+    h1 {
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+        font-weight: 800;
+        color: #111;
+        letter-spacing: -1px;
+    }
 
-  header{
-    text-align:center;
-    margin-bottom:20px;
-  }
-  h1{
-    margin:0;
-    font-size:2.2rem;
-    letter-spacing:-0.6px;
-    color:var(--accent);
-    font-weight:800;
-  }
-  p.lead{
-    margin:8px 0 18px;
-    color:var(--muted);
-    font-size:0.98rem;
-  }
+    .fact-box {
+        background: #f8f9fa;
+        border-left: 6px solid #4B7BEC;
+        padding: 16px 20px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        transition: 0.3s;
+    }
 
-  /* grid */
-  .grid{
-    display:grid;
-    gap:16px;
-    grid-template-columns: repeat(3, 1fr);
-  }
+    .fact-box:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
 
-  @media (max-width:1000px){
-    .grid{grid-template-columns: repeat(2,1fr)}
-  }
-  @media (max-width:640px){
-    .grid{grid-template-columns: 1fr}
-    h1{font-size:1.8rem}
-  }
+    .fact-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #2C3E50;
+    }
 
-  .card{
-    background:var(--card);
-    padding:16px;
-    border-radius:var(--radius);
-    box-shadow:var(--shadow);
-    border:1px solid rgba(15,23,36,0.03);
-    transition:transform .16s ease, box-shadow .16s ease;
-  }
-  .card:hover{transform:translateY(-6px); box-shadow:0 14px 28px rgba(16,24,40,0.08)}
-  .card .title{
-    display:flex;align-items:flex-start;gap:10px;
-    font-weight:700;color:#0b1220;font-size:1rem;margin-bottom:8px;
-  }
-  .card .title .emoji{font-size:1.2rem;line-height:1}
-  .card .text{color:var(--muted);font-size:0.95rem;line-height:1.55;margin:0}
-  .small{font-size:0.86rem;color:#94a3b8;margin-top:10px}
-  footer{margin-top:20px;text-align:center;color:var(--muted);font-size:0.87rem}
+    .fact-text {
+        font-size: 1rem;
+        line-height: 1.55;
+        color: #333;
+    }
+
 </style>
 </head>
+
 <body>
-  <div class="wrapper" role="main">
-    <header>
-      <h1>Bunları Biliyor Musun?</h1>
-      <p class="lead">Teknoloji ve yapay zekâyla ilgili ilginç, güncel ve lise düzeyinde anlaşılır bilgiler — panonuz veya sunumlarınız için uygun kartlar.</p>
+
+<div class="container">
+
+    <h1>Bunları Biliyor Musun?</h1>
+
+    <!-- Bilgi Kutuları -->
+    
     </header>
 
     <section class="grid" aria-label="Bilgi Kartları">
@@ -253,9 +234,7 @@
 
     </section>
 
-    <footer>
-      Hazırlayan: Vetu's • İstersen bu sayfayı PDF'e dönüştürüp A4 baskıya uygun hâle getirebilirim.
-    </footer>
-  </div>
+</div>
+
 </body>
 </html>
