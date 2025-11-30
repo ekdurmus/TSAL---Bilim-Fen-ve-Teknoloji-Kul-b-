@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Geleceğin Meslekleri Anketi</title>
+<style>
+    body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; }
+    .container {
+        max-width: 750px; margin: 40px auto; background: white;
+        padding: 35px; border-radius: 14px;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.07);
+    }
+    h1 { text-align: center; font-weight: 600; color: #333; }
+    .question { margin-bottom: 28px; }
+    .question p { font-size: 18px; margin-bottom: 10px; color: #444; }
+    label { display: block; margin-bottom: 7px; font-size: 16px; cursor: pointer; }
+    input[type="radio"] { margin-right: 8px; transform: scale(1.15); }
+    button {
+        width: 100%; padding: 14px; font-size: 18px;
+        background: #3c7cff; color: white; border-radius: 10px;
+        border: none; cursor: pointer; margin-top: 15px;
+    }
+    button:hover { background: #1e5fff; }
+    .result {
+        display: none; margin-top: 25px; padding: 20px;
+        background: #eef4ff; border-left: 5px solid #3c7cff;
+        border-radius: 8px; font-size: 18px;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Geleceğin Meslekleri Anketi</h1>
+
+    <form id="surveyForm">
+
+        <!-- Questions -->
+        <script>
+            const questions = [
+                ["Hangi alan seni daha çok motive eder?", ["AI","Yapay Zeka"],["Cyber","Siber Güvenlik"],["Health","Sağlık - Biyoteknoloji"],["Design","Dijital Tasarım"]],
+                ["Yeni teknolojileri takip eder misin?", ["AI","Evet, sürekli"],["Cyber","Ara sıra"],["Design","Yaratıcı alanları daha çok takip ederim"]],
+                ["Kodlama öğrenmeye sıcak bakar mısın?", ["AI","Evet"],["Cyber","Evet, çünkü güvenlik alanı ilgimi çekiyor"],["Design","Hayır, tasarıma daha yakınım"]],
+                ["Analitik düşünme becerini nasıl görüyorsun?", ["AI","Çok iyi"],["Cyber","Orta"],["Design","Zayıf"]],
+                ["Yaratıcı projeleri sever misin?", ["Design","Evet"],["AI","Bazen"],["Cyber","Hayır"]],
+                ["Takım halinde çalışmayı sever misin?", ["Health","Evet"],["AI","Hem tek hem takım"],["Cyber","Tek başıma"]],
+                ["Hangi çalışma ortamını tercih edersin?", ["AI","Uzaktan"],["Design","Ofis"],["Cyber","Hibrit"]],
+                ["Problem çözmekten keyif alır mısın?", ["AI","Evet"],["Cyber","Zor problemleri çözerim"],["Design","Duruma göre"]]
+            ];
+        </script>
+
+        <div id="questionsBox"></div>
+
+        <button type="button" onclick="calculateResult()">Anketi Tamamla</button>
+    </form>
+
+    <div id="resultBox" class="result"></div>
+</div>
+
+<script>
+// -----------------------------
+//  SORULARI OLUŞTUR
+// -----------------------------
+let html = "";
+questions.forEach((q, i) => {
+    html += `<div class='question'><p>${i+1}. ${q[0]}</p>`;
+    for (let j = 1; j < q.length; j++) {
+        html += `
+            <label>
+                <input type="radio" name="q${i}" value="${q[j][0]}">
+                ${q[j][1]}
+            </label>`;
+    }
+    html += "</div>";
+});
+document.getElementById("questionsBox").innerHTML = html;
+
+
+// -----------------------------
+//  SONUCU HESAPLA
+// -----------------------------
+function calculateResult() {
+    let counts = { AI:0, Cyber:0, Health:0, Design:0 };
+    
+    for (let i = 0; i < questions.length; i++) {
+        const answer = document.querySelector(`input[name="q${i}"]:checked`);
+        if (answer) counts[answer.value]++;
+    }
+
+    let best = Object.keys(counts).reduce((a,b)=> counts[a] > counts[b] ? a : b);
+
+    let message = "";
+    if (best === "AI") message = "Sonuç: <b>Yapay Zeka Mühendisi / Veri Bilimci</b><br>Analitik düşünme, problem çözme ve teknoloji ilgisi seni bu alana taşıyor.";
+    if (best === "Cyber") message = "Sonuç: <b>Siber Güvenlik Uzmanı</b><br>Risk analizi ve teknik merakın seni bu alanda çok güçlü yapıyor.";
+    if (best === "Health") message = "Sonuç: <b>Biyoteknoloji / Genetik Mühendisliği</b><br>İnsan odaklı çalışmayı seviyorsun, sağlık teknolojileri senin için ideal.";
+    if (best === "Design") message = "Sonuç: <b>UI/UX Tasarımcısı / Dijital Medya Uzmanı</b><br>Yaratıcılığın seni teknoloji ile sanatın birleştiği alana yönlendiriyor.";
+
+    const box = document.getElementById("resultBox");
+    box.innerHTML = message;
+    box.style.display = "block";
+}
+</script>
+
+</body>
+</html>
