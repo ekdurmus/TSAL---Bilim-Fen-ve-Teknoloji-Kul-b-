@@ -68,171 +68,76 @@
 
     <!-- Bilgi Kutuları -->
     
-    </header>
+    <div class="fact-box">
+        <div class="fact-title">📌 2025'te AI Kullanımı</div>
+        <div class="fact-text">2025 yılı itibarıyla öğrencilerin %70’inin yapay zekâ destekli araçları günlük ödev ve araştırma süreçlerinde aktif olarak kullandığı tahmin ediliyor.</div>
+    </div>
 
-    <section class="grid" aria-label="Bilgi Kartları">
+    <div class="fact-box">
+        <div class="fact-title">🔐 Siber Güvenlik Yükselişte</div>
+        <div class="fact-text">2030’a kadar siber güvenliğin, tüm teknoloji alanları arasında %310 büyüme ile dünyanın en hızlı genişleyen sektörü olması bekleniyor.</div>
+    </div>
 
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">📱</span> Akıllı telefonunuz yüzünüzü haritalandırır</div>
-        <p class="text">Yüz tanıma yazılımı, yüzünüzdeki ana hatları ve noktaları sayısal bir modele dönüştürür. Böylece cihazınız sizi saniyenin küçük bir kısmında tanır ve kilidi açar.</p>
-      </article>
+    <div class="fact-box">
+        <div class="fact-title">📊 Veri Bilimi Gücü</div>
+        <div class="fact-text">Ortalama bir veri bilimcisi, yalnızca bir dakikada bir okulun bir yılda topladığı kayıt miktarından daha fazla veri işleyebiliyor.</div>
+    </div>
 
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🎧</span> Sana özel öneriler</div>
-        <p class="text">Netflix ve Spotify gibi hizmetler, izleme/dinleme geçmişinizi, atlama davranışınızı ve zamanlamaları analiz eden yapay zekâ algoritmalarıyla size özel listeler oluşturur.</p>
-      </article>
+    <div class="fact-box">
+        <div class="fact-title">🇹🇷 Türkiye ve Girişimcilik</div>
+        <div class="fact-text">Türkiye, teknoloji girişimciliği ekosisteminde dünyada ilk 20 içinde yer alarak yenilikçi projelere yüksek yatırım çeken ülkeler arasında bulunuyor.</div>
+    </div>
 
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">📲</span> Sosyal medya akışınızı bir AI şekillendirir</div>
-        <p class="text">Instagram, TikTok ve X; beğenileriniz, izleme süreleriniz ve etkileşimlerinizi öğrenerek akışınızı sürekli kişiselleştirir ve sizi platformda daha uzun tutmayı hedefler.</p>
-      </article>
+    <!-- Eklenen 10 yeni bilgi -->
+    <div class="fact-box">
+        <div class="fact-title">🌍 2040'ın Mesleklerinin %60'ı Henüz Yok</div>
+        <div class="fact-text">Uzmanlar, 2040 yılında popüler olacak mesleklerin %60’ının bugün daha icat edilmediğini söylüyor. Eğitim sistemleri bu bilinmeyen geleceğe uyum sağlamak için hızla değişiyor.</div>
+    </div>
 
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">✉️</span> Spam filtreleri küçük yapay zekâlardır</div>
-        <p class="text">E-postalar içerik, gönderen, bağlantılar ve geçmiş davranışlara göre taranır; şüpheli olanlar otomatik olarak spam klasörüne gönderilir.</p>
-      </article>
+    <div class="fact-box">
+        <div class="fact-title">🤖 Yapay Zekâ Öğretmen Asistanı Oluyor</div>
+        <div class="fact-text">AI tabanlı öğretmen asistanları, 2026'dan itibaren dünya genelindeki okullarda öğrencilerin ödevlerini değerlendiren ve kişisel çalışma planı çıkaran dijital rehberlere dönüşüyor.</div>
+    </div>
 
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🗺️</span> Google Haritalar ve trafik tahminleri</div>
-        <p class="text">Trafik tahminleri, anonim konum verileri, hız bilgileri ve yol olaylarını bir araya getirip anlık analiz yapan yapay zekâ ile oluşturulur; bu yüzden çok isabetlidir.</p>
-      </article>
+    <div class="fact-box">
+        <div class="fact-title">🚗 Otonom Araçlar ve Yeni İşler</div>
+        <div class="fact-text">Otonom araçların yaygınlaşmasıyla “trafik algoritma uzmanı”, “otonom rota denetçisi” ve “yapay zekâ sürüş güvenlik analisti” gibi yeni meslekler doğuyor.</div>
+    </div>
 
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">✍️</span> Yazım denetleyicileri sizi öğrenir</div>
-        <p class="text">Grammarly gibi araçlar yazı stilinizi, sık kullandığınız ifadeleri ve hataları öğrenerek daha uygun öneriler sunar; zamanla size özel hale gelir.</p>
-      </article>
+    <div class="fact-box">
+        <div class="fact-title">🧬 Gen Teknolojisi Devrimi</div>
+        <div class="fact-text">CRISPR teknolojisi sayesinde 2035’e kadar yüzlerce genetik hastalığın tamamen tedavi edilebilir olması bekleniyor. Bu gelişme biyoteknoloji alanını devasa ölçüde büyütüyor.</div>
+    </div>
 
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🚗</span> Araçlardaki güvenlik sistemleri</div>
-        <p class="text">Şeritten sapma uyarısı, otomatik frenleme ve çarpışma öncesi sistemler; kameralar, radar ve yapay zekâ kombinasyonuyla çevreyi algılar ve riskleri azaltır.</p>
-      </article>
+    <div class="fact-box">
+        <div class="fact-title">🧠 Beyin-Bilgisayar Arayüzleri</div>
+        <div class="fact-text">BCI teknolojileri, felçli bireylerin yalnızca düşünerek yazı yazmasını ve cihaz kontrol etmesini sağlıyor. 2030’da bu teknolojinin ticari hale gelmesi öngörülüyor.</div>
+    </div>
 
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🎙️</span> Akıllı ev asistanlarının dili</div>
-        <p class="text">Alexa, Google Asistan gibi cihazlar, doğal dil işleme (NLP) yöntemleri sayesinde konuşmanızı anlar, komutlarınızı çözümler ve yanıt üretir.</p>
-      </article>
+    <div class="fact-box">
+        <div class="fact-title">🌐 Metaverse Ekonomisi</div>
+        <div class="fact-text">Metaverse platformlarının 2032’ye kadar dünya ekonomisine yıllık 5 trilyon dolar katkı sağlayabileceği tahmin ediliyor. Dijital mimarlık yeni bir mühendislik alanına dönüşüyor.</div>
+    </div>
 
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🛒</span> E-ticaret önerilerinin arkasındaki AI</div>
-        <p class="text">“Bu ürünü alanlar bunları da aldı” türü öneriler, milyonlarca alışveriş verisinden desen çıkaran yapay zekâ modelleriyle üretilir.</p>
-      </article>
+    <div class="fact-box">
+        <div class="fact-title">🚀 Uzay Endüstrisi Büyüyor</div>
+        <div class="fact-text">Uzay turizmi sektörü 2035 yılında 1 trilyon dolarlık bir endüstri haline gelebilir. “Ay madenciliği operatörü” gibi meslekler gerçek meslek kategorisine giriyor.</div>
+    </div>
 
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🏦</span> Bankaların dolandırıcılık tespiti</div>
-        <p class="text">Banka sistemleri harcama düzeninizi öğrenir; olağandışı bir hareket görüldüğünde sizi uyaran ve işlemi durduran yapay zekâ sistemleri çalışır.</p>
-      </article>
+    <div class="fact-box">
+        <div class="fact-title">⚡ Kuantum Bilgisayarlar</div>
+        <div class="fact-text">Kuantum bilgisayarlar saniyede trilyonlarca işlem yaparak mevcut süper bilgisayarların çözemediği problemleri çözebilecek seviyeye ulaşıyor.</div>
+    </div>
 
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">💸</span> Dinamik fiyatlandırma</div>
-        <p class="text">Araç kiralama ve bilet satışlarında fiyatlar talebe göre anlık ayarlanır; şirketler bu ayarlamayı yapay zekâ ile otomatikleştirir.</p>
-      </article>
+    <div class="fact-box">
+        <div class="fact-title">🌱 Sürdürülebilir Meslek Dalgası</div>
+        <div class="fact-text">2030 itibarıyla tüm ülkelerde karbon-nötr hedefi nedeniyle çevre mühendisliği ve sürdürülebilirlik danışmanlığı en hızlı büyüyen meslek kategorilerinden biri olacak.</div>
+    </div>
 
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🦯</span> Görme engelliler için “gören uygulamalar”</div>
-        <p class="text">Cihaz kameralarıyla çekilen görüntüler yapay zekâ tarafından analiz edilip metin ve nesne tanımları sesli olarak aktarılır; günlük yaşamı kolaylaştırır.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🤖</span> Tesla ve otonom sürüş</div>
-        <p class="text">Otonom sürüş sistemleri çevresini saniyede birçok kez tarar; kameralar, lidar ve modeller birlikte çalışarak sürüş kararları alır.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">📞</span> Çağrı merkezlerinde yapay zekâ</div>
-        <p class="text">Bazı merkezler, aradığınız konuya göre sizi doğru departmana yönlendiren konuşma anlayan yapay zekâ botları kullanır.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🔎</span> Google otomatik tamamlama nasıl çalışır?</div>
-        <p class="text">Yazarken çıkan öneriler popüler aramalar, bölgesel trendler ve sizin geçmiş aramalarınızın birleşimiyle tahmin edilir; arka planda bir yapay zekâ çalışır.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">📸</span> Fotoğraf etiketleme ve yüz tanıma</div>
-        <p class="text">Sosyal ağlar fotoğraf içindeki yüzleri analiz ederek tanınan kişilerle eşleştirme önerileri sunar; bu işlem yüz tanıma modelleriyle yapılır.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">⛅</span> Hava tahmini ve yapay zekâ</div>
-        <p class="text">Modern hava durumu modelleri büyük veri ve yapay zekâ kullanarak çok değişkenli atmosfer verilerini işler; bu sayede tahminler daha isabetli olur.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">✉️</span> Gmail Akıllı Yanıt</div>
-        <p class="text">Gmail içeriği analiz ederek kısa, uygun cevap önerileri üretir; bu özellik arka planda çalışan küçük bir yapay zekâ modelidir.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🍽️</span> Restoranlarda yapay zekâ destekli sipariş</div>
-        <p class="text">Bazı restoranlarda, tablet tabanlı sistemler müşterinin tercihlerini öğrenip önerilerde bulunur ve sipariş akışını hızlandırır.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🗣️</span> Google Asistan’ın konuşma yeteneği</div>
-        <p class="text">“Arkadaşınla ara” gibi komutları anlayabilmesi, konuşma verileriyle eğitilmiş doğal dil işleme modellerinin sonucudur.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">📈</span> 2025: Öğrencilerin AI kullanımı</div>
-        <p class="text">2025 itibarıyla öğrencilerin önemli bir kısmı ödev, araştırma ve dil pratiği için yapay zekâ destekli araçları günlük olarak kullanıyor.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🛡️</span> Siber güvenlik: hızlı büyüyen alan</div>
-        <p class="text">Dijitalleşme arttıkça siber güvenlik uzmanlarına olan talep de büyüyor; 2030’a doğru bu alan kritik bir iş gücü ihtiyacı doğuracak.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🧮</span> Veri bilimcilerin işleme gücü</div>
-        <p class="text">Günümüz veri araçlarıyla bir veri bilimcisi dakikalar içinde çok büyük veri setlerini işleyebilir; bu, geleneksel kayıtların ötesinde bir hızdır.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🇹🇷</span> Türkiye ve teknoloji girişimleri</div>
-        <p class="text">Türkiye, son yıllarda girişimcilik ekosistemini büyüterek teknoloji start-up’larına ev sahipliği yapıyor ve küresel arenada daha görünür hale geliyor.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🌐</span> İnternetteki bilgi patlaması</div>
-        <p class="text">Dijital verinin büyük bölümü son yıllarda üretildi; sosyal medya, sensörler ve mobil uygulamalar sayesinde veri hacmi katlanarak artıyor.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🛰️</span> Uydu görüntüleri ve AI</div>
-        <p class="text">Uydu verileri yapay zekâ ile otomatik sınıflandırılarak tarım, çevre ve afet yönetimi gibi alanlarda hızla kullanılıyor.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🏙️</span> Akıllı şehir ışıkları</div>
-        <p class="text">Trafik yoğunluğunu anlık ölçen sistemler, sinyal sürelerini optimize ederek şehir içi akışı iyileştirir; bu işlem çoğunlukla yapay zekâ tabanlıdır.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🧬</span> Yapay zekâ ve genetik</div>
-        <p class="text">AI, DNA verilerini hızla analiz ederek genetik araştırmaları hızlandırıyor; bazı hastalıkların tespiti ve tedavi planlamasına katkı sağlıyor.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🎮</span> Oyunlarda adaptif yapay zekâ</div>
-        <p class="text">Modern oyunlardaki NPC’ler (oyuncu dışı karakterler), oyuncunun davranışlarını öğrenip karşılık veren adaptif yapay zekâ sistemlerine sahip.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🔊</span> Ses klonlama ve etik</div>
-        <p class="text">Kısa ses kayıtlarıyla gerçekçi ses klonları üretilebiliyor; bu teknoloji fırsatlar sunarken kötüye kullanım riskleri de taşıyor.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">⚡</span> Enerji ve kesinti tahmini</div>
-        <p class="text">Şebeke verileri ve hava tahminleri birleştirilip yapay zekâ ile işlenerek elektrik kesintileri ve talep dalgalanmaları önceden tahmin edilebiliyor.</p>
-      </article>
-
-      <article class="card" tabindex="0">
-        <div class="title"><span class="emoji">🌱</span> Tarımda AI ve dronlar</div>
-        <p class="text">Dronlardan gelen görüntüler yapay zekâyla analiz edilerek bitki hastalıkları, sulama ihtiyaçları ve verim tahmini erken safhada tespit edilebiliyor.</p>
-      </article>
-
-    </section>
+    <div class="fact-box">
+        <div class="fact-title">🎮 Oyun Sektörü Akademiye Giriyor</div>
+        <div class="fact-text">Oyun geliştirme, üniversitelerde klasik mühendislik bölümleri kadar yaygın hale geliyor. Oyun psikolojisi ve oyun fiziği gibi yeni uzmanlıklar oluşuyor.</div>
+    </div>
 
 </div>
 
