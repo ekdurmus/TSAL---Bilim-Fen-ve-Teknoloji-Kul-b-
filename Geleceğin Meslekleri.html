@@ -2,29 +2,65 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Geleceğin Meslekleri Anketi</title>
+
 <style>
-    body { font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; }
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f7;
+        margin: 0;
+        padding: 0;
+    }
     .container {
-        max-width: 750px; margin: 40px auto; background: white;
-        padding: 35px; border-radius: 14px;
-        box-shadow: 0 2px 15px rgba(0,0,0,0.07);
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 14px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.1);
     }
-    h1 { text-align: center; font-weight: 600; color: #333; }
-    .question { margin-bottom: 28px; }
-    .question p { font-size: 18px; margin-bottom: 10px; color: #444; }
-    label { display: block; margin-bottom: 7px; font-size: 16px; cursor: pointer; }
-    input[type="radio"] { margin-right: 8px; transform: scale(1.15); }
+    h1 {
+        text-align: center;
+        color: #333;
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .question {
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 8px;
+        color: #444;
+    }
+    select, button {
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
     button {
-        width: 100%; padding: 14px; font-size: 18px;
-        background: #3c7cff; color: white; border-radius: 10px;
-        border: none; cursor: pointer; margin-top: 15px;
+        background: #4a6cff;
+        color: white;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: 0.2s;
     }
-    button:hover { background: #1e5fff; }
+    button:hover {
+        background: #3a56d6;
+    }
     .result {
-        display: none; margin-top: 25px; padding: 20px;
-        background: #eef4ff; border-left: 5px solid #3c7cff;
-        border-radius: 8px; font-size: 18px;
+        margin-top: 25px;
+        background: #eef2ff;
+        padding: 20px;
+        border-radius: 10px;
+        display: none;
+        font-size: 18px;
+        color: #333;
+        line-height: 1.5;
     }
 </style>
 </head>
@@ -33,71 +69,248 @@
 <div class="container">
     <h1>Geleceğin Meslekleri Anketi</h1>
 
-    <form id="surveyForm">
+    <form id="quizForm">
 
-        <!-- Questions -->
-        <script>
-            const questions = [
-                ["Hangi alan seni daha çok motive eder?", ["AI","Yapay Zeka"],["Cyber","Siber Güvenlik"],["Health","Sağlık - Biyoteknoloji"],["Design","Dijital Tasarım"]],
-                ["Yeni teknolojileri takip eder misin?", ["AI","Evet, sürekli"],["Cyber","Ara sıra"],["Design","Yaratıcı alanları daha çok takip ederim"]],
-                ["Kodlama öğrenmeye sıcak bakar mısın?", ["AI","Evet"],["Cyber","Evet, çünkü güvenlik alanı ilgimi çekiyor"],["Design","Hayır, tasarıma daha yakınım"]],
-                ["Analitik düşünme becerini nasıl görüyorsun?", ["AI","Çok iyi"],["Cyber","Orta"],["Design","Zayıf"]],
-                ["Yaratıcı projeleri sever misin?", ["Design","Evet"],["AI","Bazen"],["Cyber","Hayır"]],
-                ["Takım halinde çalışmayı sever misin?", ["Health","Evet"],["AI","Hem tek hem takım"],["Cyber","Tek başıma"]],
-                ["Hangi çalışma ortamını tercih edersin?", ["AI","Uzaktan"],["Design","Ofis"],["Cyber","Hibrit"]],
-                ["Problem çözmekten keyif alır mısın?", ["AI","Evet"],["Cyber","Zor problemleri çözerim"],["Design","Duruma göre"]]
-            ];
-        </script>
+        <!-- 20 SORU + 10 EK SORU -->
+        <div class="question">
+            <label>1. Matematikle aran nasıldır?</label>
+            <select name="q1">
+                <option value="tech">Harikadır</option>
+                <option value="bio">Analitik düşünürüm</option>
+                <option value="design">Fena değil</option>
+                <option value="social">Zayıf</option>
+            </select>
+        </div>
 
-        <div id="questionsBox"></div>
+        <div class="question">
+            <label>2. Kodlama ilgini çeker mi?</label>
+            <select name="q2">
+                <option value="tech">Evet, çok</option>
+                <option value="data">Biraz</option>
+                <option value="design">Tasarım kısmı daha çok</option>
+                <option value="social">Hayır</option>
+            </select>
+        </div>
 
-        <button type="button" onclick="calculateResult()">Anketi Tamamla</button>
+        <div class="question">
+            <label>3. İnsanlarla iletişimin nasıldır?</label>
+            <select name="q3">
+                <option value="social">Çok iyi</option>
+                <option value="design">Tasarım süreçlerinde daha iyiyim</option>
+                <option value="tech">Teknik iletişimde iyiyim</option>
+                <option value="data">Ortalama</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>4. Oyun oynar mısın / oyun geliştirmek ister misin?</label>
+            <select name="q4">
+                <option value="gamedev">Evet, çok isterim</option>
+                <option value="design">Tasarım kısmı daha iyi</option>
+                <option value="tech">Teknik kısmı ilgimi çeker</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>5. Bilim mi, teknoloji mi seni daha çok çeker?</label>
+            <select name="q5">
+                <option value="ai">Teknoloji</option>
+                <option value="bio">Biyoloji & Genetik</option>
+                <option value="space">Uzay</option>
+                <option value="design">Dijital tasarım</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>6. Problem çözmeyi sever misin?</label>
+            <select name="q6">
+                <option value="data">Evet, çok</option>
+                <option value="tech">Ortalama</option>
+                <option value="design">Yaratıcı çözümler üretirim</option>
+                <option value="social">Daha çok insan odaklı çözümler</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>7. Siber güvenlik ilgini çeker mi?</label>
+            <select name="q7">
+                <option value="cyber">Evet</option>
+                <option value="tech">Biraz</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>8. Biyoteknoloji veya genetikle aran nasıl?</label>
+            <select name="q8">
+                <option value="bio">Çok severim</option>
+                <option value="bio">İlgim var</option>
+                <option value="none">Pek yok</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>9. Robotik ilgini çeker mi?</label>
+            <select name="q9">
+                <option value="robotics">Evet</option>
+                <option value="tech">Biraz</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>10. Tasarım yapmayı sever misin?</label>
+            <select name="q10">
+                <option value="design">Evet, çok</option>
+                <option value="gamedev">Oyun tasarımı ilgimi çeker</option>
+                <option value="tech">Teknik tasarımlar</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <!-- 10 EK SORU -->
+
+        <div class="question">
+            <label>11. Uzay teknolojileri ilgini çeker mi?</label>
+            <select name="q11">
+                <option value="space">Evet</option>
+                <option value="tech">Biraz</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>12. Enerji sistemlerine ilgin var mı?</label>
+            <select name="q12">
+                <option value="energy">Evet</option>
+                <option value="tech">Biraz</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>13. Adli bilişim (dijital suçlar) ilgini çeker mi?</label>
+            <select name="q13">
+                <option value="forensic">Evet</option>
+                <option value="cyber">Biraz</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>14. Nanoteknoloji hakkında ne düşünürsün?</label>
+            <select name="q14">
+                <option value="nano">Çok ilginç</option>
+                <option value="bio">Bilimsel açıdan ilginç</option>
+                <option value="none">İlgim yok</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>15. Yapay zekâ alanında çalışmak ister misin?</label>
+            <select name="q15">
+                <option value="ai">Evet</option>
+                <option value="data">Veri tarafı daha çok ilgimi çeker</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>16. Dijital içerik üretmeyi sever misin?</label>
+            <select name="q16">
+                <option value="media">Evet</option>
+                <option value="design">Tasarım içerikleri</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>17. Sağlık teknolojilerine ilgin var mı?</label>
+            <select name="q17">
+                <option value="health">Evet</option>
+                <option value="bio">Biyoloji ile bağlantılı</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>18. Büyük veri ile çalışmayı ister misin?</label>
+            <select name="q18">
+                <option value="data">Evet</option>
+                <option value="ai">AI ile birlikte</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>19. Elektronik sistemlerle uğraşmayı sever misin?</label>
+            <select name="q19">
+                <option value="robotics">Evet</option>
+                <option value="tech">Biraz</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label>20. Geleceğin enerji kaynaklarını araştırmak ister misin?</label>
+            <select name="q20">
+                <option value="energy">Evet</option>
+                <option value="tech">Biraz</option>
+                <option value="none">Hayır</option>
+            </select>
+        </div>
+
+        <button type="button" onclick="calculateResult()">Sonucu Göster</button>
+
     </form>
 
-    <div id="resultBox" class="result"></div>
+    <div id="result" class="result"></div>
 </div>
 
 <script>
-// -----------------------------
-//  SORULARI OLUŞTUR
-// -----------------------------
-let html = "";
-questions.forEach((q, i) => {
-    html += `<div class='question'><p>${i+1}. ${q[0]}</p>`;
-    for (let j = 1; j < q.length; j++) {
-        html += `
-            <label>
-                <input type="radio" name="q${i}" value="${q[j][0]}">
-                ${q[j][1]}
-            </label>`;
-    }
-    html += "</div>";
-});
-document.getElementById("questionsBox").innerHTML = html;
-
-
-// -----------------------------
-//  SONUCU HESAPLA
-// -----------------------------
 function calculateResult() {
-    let counts = { AI:0, Cyber:0, Health:0, Design:0 };
-    
-    for (let i = 0; i < questions.length; i++) {
-        const answer = document.querySelector(`input[name="q${i}"]:checked`);
-        if (answer) counts[answer.value]++;
+    const form = document.getElementById("quizForm");
+    const resultBox = document.getElementById("result");
+
+    let scores = {
+        ai: 0, tech: 0, data: 0, design: 0, social: 0,
+        robotics: 0, bio: 0, cyber: 0, gamedev: 0,
+        space: 0, forensic: 0, nano: 0, media: 0,
+        energy: 0, health: 0
+    };
+
+    const formData = new FormData(form);
+    for (let value of formData.values()) {
+        if (scores[value] !== undefined) scores[value]++;
     }
 
-    let best = Object.keys(counts).reduce((a,b)=> counts[a] > counts[b] ? a : b);
+    let best = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
 
-    let message = "";
-    if (best === "AI") message = "Sonuç: <b>Yapay Zeka Mühendisi / Veri Bilimci</b><br>Analitik düşünme, problem çözme ve teknoloji ilgisi seni bu alana taşıyor.";
-    if (best === "Cyber") message = "Sonuç: <b>Siber Güvenlik Uzmanı</b><br>Risk analizi ve teknik merakın seni bu alanda çok güçlü yapıyor.";
-    if (best === "Health") message = "Sonuç: <b>Biyoteknoloji / Genetik Mühendisliği</b><br>İnsan odaklı çalışmayı seviyorsun, sağlık teknolojileri senin için ideal.";
-    if (best === "Design") message = "Sonuç: <b>UI/UX Tasarımcısı / Dijital Medya Uzmanı</b><br>Yaratıcılığın seni teknoloji ile sanatın birleştiği alana yönlendiriyor.";
+    const careers = {
+        ai: "Yapay Zekâ Mühendisi",
+        tech: "Yazılım Mühendisi / Sistem Geliştirici",
+        data: "Veri Bilimci / Veri Analisti",
+        design: "UI/UX Tasarımcısı / Dijital Tasarımcı",
+        social: "Eğitim Teknoloğu / Danışman",
+        robotics: "Robotik Mühendisi",
+        bio: "Biyoteknoloji Uzmanı / Genetik Araştırmacı",
+        cyber: "Siber Güvenlik Uzmanı",
+        gamedev: "Oyun Geliştiricisi",
+        space: "Uzay Sistemleri Mühendisi",
+        forensic: "Adli Bilişim Uzmanı",
+        nano: "Nanoteknoloji Mühendisi",
+        media: "Dijital Medya İçerik Tasarımcısı",
+        energy: "Enerji Sistemleri Mühendisi",
+        health: "Dijital Sağlık Uzmanı"
+    };
 
-    const box = document.getElementById("resultBox");
-    box.innerHTML = message;
-    box.style.display = "block";
+    resultBox.style.display = "block";
+    resultBox.innerHTML = `
+        <strong>Sonuç:</strong><br>
+        Senin geleceğe en yakın meslek profilin: <br>
+        <b style="font-size:20px;">${careers[best]}</b>
+    `;
 }
 </script>
 
