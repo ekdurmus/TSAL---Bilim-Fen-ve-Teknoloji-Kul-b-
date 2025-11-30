@@ -3,155 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Teknolojide İlginç Bilgiler</title>
+<title>Bunları Biliyor Musun?</title>
 
 <style>
     body {
-        font-family: Arial, Helvetica, sans-serif;
-        background: #ffffff;
-        color: #222;
         margin: 0;
         padding: 0;
-        line-height: 1.7;
+        font-family: "Inter", sans-serif;
+        background: #ffffff;
+        color: #222;
     }
 
     .container {
         max-width: 900px;
-        margin: auto;
+        margin: 20px auto;
         padding: 20px;
     }
 
     h1 {
         text-align: center;
+        font-size: 2.4rem;
         margin-bottom: 30px;
-        font-size: 28px;
-        font-weight: 700;
+        font-weight: 800;
+        color: #111;
+        letter-spacing: -1px;
     }
 
-    .fact {
-        background: #f6f6f6;
-        padding: 18px 20px;
-        border-radius: 10px;
-        margin-bottom: 18px;
-        border-left: 6px solid #4a90e2;
+    .fact-box {
+        background: #f8f9fa;
+        border-left: 6px solid #4B7BEC;
+        padding: 16px 20px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        transition: 0.3s;
     }
 
-    .fact strong {
-        font-size: 17px;
+    .fact-box:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
 
-    @media(max-width: 600px) {
-        h1 { font-size: 24px; }
-        .fact { font-size: 15px; }
+    .fact-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #2C3E50;
     }
+
+    .fact-text {
+        font-size: 1rem;
+        line-height: 1.55;
+        color: #333;
+    }
+
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
-<h1>Teknolojide İlginç Bilgiler</h1>
+    <h1>Bunları Biliyor Musun?</h1>
 
-<div class="fact">
-    <strong>📱 Akıllı telefonunuz yüzünüzü matematiksel bir haritaya dönüştürüyor.</strong><br>
-    Modern yüz tanıma yazılımları, yüzünüzdeki her açıyı, eğimi, mesafeyi ve ışık yansımasını sayısal bir modele çevirir. Bu sayede cihazınızı saniyenin onda biri kadar kısa bir sürede tanıyabilir. Her yüz, yaklaşık 30.000 farklı nokta ile analiz edilir.
-</div>
+    <!-- Bilgi Kutuları -->
+    
+    <div class="fact-box">
+        <div class="fact-title">📌 2025'te AI Kullanımı</div>
+        <div class="fact-text">2025 yılı itibarıyla öğrencilerin %70’inin yapay zekâ destekli araçları günlük ödev ve araştırma süreçlerinde aktif olarak kullandığı tahmin ediliyor.</div>
+    </div>
 
-<div class="fact">
-    <strong>🎵 Netflix ve Spotify’daki önerilerin %90’ı yapay zekâ tarafından üretiliyor.</strong><br>
-    İzleme ve dinleme alışkanlıklarınız; saat, konum, ruh hali analizi, izleme süreleri ve atladığınız sahnelere kadar incelenir. Bu verilerden yüzlerce desen çıkaran yapay zekâ, size özel içerikler oluşturur.
-</div>
+    <div class="fact-box">
+        <div class="fact-title">🔐 Siber Güvenlik Yükselişte</div>
+        <div class="fact-text">2030’a kadar siber güvenliğin, tüm teknoloji alanları arasında %310 büyüme ile dünyanın en hızlı genişleyen sektörü olması bekleniyor.</div>
+    </div>
 
-<div class="fact">
-    <strong>📱 Sosyal medya akışınızı bir yapay zekâ yönetiyor.</strong><br>
-    Instagram, TikTok ve X (Twitter) akışları; beğenilerinize, izleme sürenize, durduğunuz saniyelere, hatta ekrana dokunma hızınıza göre şekillenir. Amaç, uygulamada daha uzun süre kalmanızdır.
-</div>
+    <div class="fact-box">
+        <div class="fact-title">📊 Veri Bilimi Gücü</div>
+        <div class="fact-text">Ortalama bir veri bilimcisi, yalnızca bir dakikada bir okulun bir yılda topladığı kayıt miktarından daha fazla veri işleyebiliyor.</div>
+    </div>
 
-<div class="fact">
-    <strong>✉️ Spam filtreleri, her e-postayı tarayan minik yapay zekâlardır.</strong><br>
-    E-posta içeriği, yazı stili, kelime seçimi, gönderici davranışı ve IP geçmişi analiz edilerek bir “spam skoru” verilir. Şüpheli e-postalar size ulaşmadan engellenir.
-</div>
+    <div class="fact-box">
+        <div class="fact-title">🇹🇷 Türkiye ve Girişimcilik</div>
+        <div class="fact-text">Türkiye, teknoloji girişimciliği ekosisteminde dünyada ilk 20 içinde yer alarak yenilikçi projelere yüksek yatırım çeken ülkeler arasında bulunuyor.</div>
+    </div>
 
-<div class="fact">
-    <strong>🗺️ Google Haritalar, milyonlarca kişinin anonim verisini analiz ederek trafik tahmini yapar.</strong><br>
-    Araç hızları, duraklamalar, yoğunluk artışları, yol kapama raporları ve uydu görüntüleri birleştirilerek tahminler saniyede bir güncellenir.
-</div>
+    <!-- Eklenen 10 yeni bilgi -->
+    <div class="fact-box">
+        <div class="fact-title">🌍 2040'ın Mesleklerinin %60'ı Henüz Yok</div>
+        <div class="fact-text">Uzmanlar, 2040 yılında popüler olacak mesleklerin %60’ının bugün daha icat edilmediğini söylüyor. Eğitim sistemleri bu bilinmeyen geleceğe uyum sağlamak için hızla değişiyor.</div>
+    </div>
 
-<div class="fact">
-    <strong>✍️ Grammarly gibi yazım araçları, kelime alışkanlıklarınızı öğrenir.</strong><br>
-    Yazı stiliniz, sık kullandığınız ifadeler ve cümle yapılarınız analiz edilerek daha doğal öneriler oluşturulur.
-</div>
+    <div class="fact-box">
+        <div class="fact-title">🤖 Yapay Zekâ Öğretmen Asistanı Oluyor</div>
+        <div class="fact-text">AI tabanlı öğretmen asistanları, 2026'dan itibaren dünya genelindeki okullarda öğrencilerin ödevlerini değerlendiren ve kişisel çalışma planı çıkaran dijital rehberlere dönüşüyor.</div>
+    </div>
 
-<div class="fact">
-    <strong>🚗 Modern araçlardaki otomatik fren ve şerit takibi yapay zekâ ile çalışır.</strong><br>
-    Araç, kameralar ve sensörlerle saniyede onlarca kare analiz eder ve tehlike durumunda sürücüden önce tepki verebilir.
-</div>
+    <div class="fact-box">
+        <div class="fact-title">🚗 Otonom Araçlar ve Yeni İşler</div>
+        <div class="fact-text">Otonom araçların yaygınlaşmasıyla “trafik algoritma uzmanı”, “otonom rota denetçisi” ve “yapay zekâ sürüş güvenlik analisti” gibi yeni meslekler doğuyor.</div>
+    </div>
 
-<div class="fact">
-    <strong>🎙️ Akıllı asistanlar sesinizi “dijital bir parmak izine” dönüştürür.</strong><br>
-    Alexa, Google Asistan gibi sistemler, sesinizi tonu, nefes alışverişi ve ritmine göre tanır ve komutlarınızı anlık olarak işler.
-</div>
+    <div class="fact-box">
+        <div class="fact-title">🧬 Gen Teknolojisi Devrimi</div>
+        <div class="fact-text">CRISPR teknolojisi sayesinde 2035’e kadar yüzlerce genetik hastalığın tamamen tedavi edilebilir olması bekleniyor. Bu gelişme biyoteknoloji alanını devasa ölçüde büyütüyor.</div>
+    </div>
 
-<div class="fact">
-    <strong>🛒 Online alışverişteki “benzer ürün” önerileri dev veri analizleriyle oluşturulur.</strong><br>
-    Milyonlarca alışveriş davranışı incelenerek alıcıların eğilimleri çıkarılır ve size özel öneriler belirir.
-</div>
+    <div class="fact-box">
+        <div class="fact-title">🧠 Beyin-Bilgisayar Arayüzleri</div>
+        <div class="fact-text">BCI teknolojileri, felçli bireylerin yalnızca düşünerek yazı yazmasını ve cihaz kontrol etmesini sağlıyor. 2030’da bu teknolojinin ticari hale gelmesi öngörülüyor.</div>
+    </div>
 
-<div class="fact">
-    <strong>🏦 Bankaların dolandırıcılık sistemleri yapay zekâ üzerine kuruludur.</strong><br>
-    Harcama alışkanlıklarınız öğrenilir ve olağan dışı bir hareket tespit edildiğinde sistem anında alarm verir.
-</div>
+    <div class="fact-box">
+        <div class="fact-title">🌐 Metaverse Ekonomisi</div>
+        <div class="fact-text">Metaverse platformlarının 2032’ye kadar dünya ekonomisine yıllık 5 trilyon dolar katkı sağlayabileceği tahmin ediliyor. Dijital mimarlık yeni bir mühendislik alanına dönüşüyor.</div>
+    </div>
 
-<div class="fact">
-    <strong>🚘 Araç kiralama fiyatları yapay zekâ tarafından belirlenir.</strong><br>
-    Mevsim, saat, talep, bölge yoğunluğu ve geçmiş fiyatlara göre dinamik bir fiyatlandırma yapılır.
-</div>
+    <div class="fact-box">
+        <div class="fact-title">🚀 Uzay Endüstrisi Büyüyor</div>
+        <div class="fact-text">Uzay turizmi sektörü 2035 yılında 1 trilyon dolarlık bir endüstri haline gelebilir. “Ay madenciliği operatörü” gibi meslekler gerçek meslek kategorisine giriyor.</div>
+    </div>
 
-<div class="fact">
-    <strong>👁️ Görme engelliler için çalışan “gören uygulamalar” yapay zekâ ile nesne tanır.</strong><br>
-    Kamera görüntüsü analiz edilerek nesneler, insanlar, metinler hatta duygular sesli olarak tarif edilir.
-</div>
+    <div class="fact-box">
+        <div class="fact-title">⚡ Kuantum Bilgisayarlar</div>
+        <div class="fact-text">Kuantum bilgisayarlar saniyede trilyonlarca işlem yaparak mevcut süper bilgisayarların çözemediği problemleri çözebilecek seviyeye ulaşıyor.</div>
+    </div>
 
-<div class="fact">
-    <strong>🚗 Tesla'nın otonom sürüşü, etrafındaki dünyayı saniyede onlarca kez haritalandırır.</strong><br>
-    Araç, çevresindeki objeleri, mesafeleri, ışığı ve hızları anlık olarak işleyerek sürüş kararları verir.
-</div>
+    <div class="fact-box">
+        <div class="fact-title">🌱 Sürdürülebilir Meslek Dalgası</div>
+        <div class="fact-text">2030 itibarıyla tüm ülkelerde karbon-nötr hedefi nedeniyle çevre mühendisliği ve sürdürülebilirlik danışmanlığı en hızlı büyüyen meslek kategorilerinden biri olacak.</div>
+    </div>
 
-<div class="fact">
-    <strong>📞 Çağrı merkezlerinin ilk karşılayan robotları yapay zekâdır.</strong><br>
-    Konuşma içeriğini analiz eden bot, sizi doğru departmana yönlendirir.
-</div>
-
-<div class="fact">
-    <strong>🔍 Google otomatik tamamlama, milyarlarca arama verisini analiz eden bir yapay zekâdır.</strong><br>
-    Siz yazarken arka planda popüler aramalar, bölgesel eğilimler ve kişisel geçmiş birleştirilir.
-</div>
-
-<div class="fact">
-    <strong>📸 Sosyal medyadaki fotoğraf etiketleme önerileri yüz tanıma yapay zekâsıyla oluşturulur.</strong><br>
-    Fotoğraftaki yüz hatları analiz edilerek tanıdığınız kişilerle eşleştirilir.
-</div>
-
-<div class="fact">
-    <strong>⛅ Hava durumu tahminleri yapay zekâ ile artık çok daha isabetli.</strong><br>
-    Atmosferdeki binlerce parametre anlık olarak işlenir ve tahminler her dakika güncellenir.
-</div>
-
-<div class="fact">
-    <strong>📨 Gmail’in “Akıllı Yanıt” özelliği konuşma bağlamını anlayabilen bir mini yapay zekâdır.</strong><br>
-    E-posta içeriğine göre uygun kısa cevaplar önerir.
-</div>
-
-<div class="fact">
-    <strong>🍽️ Restoranlarda kullanılan tablet sipariş sistemleri yapay zekâ ile tercih analizleri yapar.</strong><br>
-    Müşterilerin en çok neyi, ne zaman sipariş ettiği öğrenilir ve öneriler buna göre şekillenir.
-</div>
-
-<div class="fact">
-    <strong>📞 Google Asistan, komutları “doğal dil işleme” ile anlamlandırır.</strong><br>
-    Yıllarca eğitilen modeller sayesinde günlük konuşma dilinizi hatasız yorumlar.
-</div>
+    <div class="fact-box">
+        <div class="fact-title">🎮 Oyun Sektörü Akademiye Giriyor</div>
+        <div class="fact-text">Oyun geliştirme, üniversitelerde klasik mühendislik bölümleri kadar yaygın hale geliyor. Oyun psikolojisi ve oyun fiziği gibi yeni uzmanlıklar oluşuyor.</div>
+    </div>
 
 </div>
+
 </body>
 </html>
