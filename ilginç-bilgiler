@@ -1,1 +1,261 @@
-efe
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Bunları Biliyor Musun?</title>
+<style>
+  :root{
+    --bg: #ffffff;
+    --card: #fcfdff;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --shadow: 0 8px 20px rgba(16,24,40,0.06);
+    --radius: 12px;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #0f1724;
+  }
+
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;background:var(--bg)}
+  body{
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+  }
+
+  .wrapper{
+    width:100%;
+    max-width:1100px;
+  }
+
+  header{
+    text-align:center;
+    margin-bottom:20px;
+  }
+  h1{
+    margin:0;
+    font-size:2.2rem;
+    letter-spacing:-0.6px;
+    color:var(--accent);
+    font-weight:800;
+  }
+  p.lead{
+    margin:8px 0 18px;
+    color:var(--muted);
+    font-size:0.98rem;
+  }
+
+  /* grid */
+  .grid{
+    display:grid;
+    gap:16px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width:1000px){
+    .grid{grid-template-columns: repeat(2,1fr)}
+  }
+  @media (max-width:640px){
+    .grid{grid-template-columns: 1fr}
+    h1{font-size:1.8rem}
+  }
+
+  .card{
+    background:var(--card);
+    padding:16px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    border:1px solid rgba(15,23,36,0.03);
+    transition:transform .16s ease, box-shadow .16s ease;
+  }
+  .card:hover{transform:translateY(-6px); box-shadow:0 14px 28px rgba(16,24,40,0.08)}
+  .card .title{
+    display:flex;align-items:flex-start;gap:10px;
+    font-weight:700;color:#0b1220;font-size:1rem;margin-bottom:8px;
+  }
+  .card .title .emoji{font-size:1.2rem;line-height:1}
+  .card .text{color:var(--muted);font-size:0.95rem;line-height:1.55;margin:0}
+  .small{font-size:0.86rem;color:#94a3b8;margin-top:10px}
+  footer{margin-top:20px;text-align:center;color:var(--muted);font-size:0.87rem}
+</style>
+</head>
+<body>
+  <div class="wrapper" role="main">
+    <header>
+      <h1>Bunları Biliyor Musun?</h1>
+      <p class="lead">Teknoloji ve yapay zekâyla ilgili ilginç, güncel ve lise düzeyinde anlaşılır bilgiler — panonuz veya sunumlarınız için uygun kartlar.</p>
+    </header>
+
+    <section class="grid" aria-label="Bilgi Kartları">
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">📱</span> Akıllı telefonunuz yüzünüzü haritalandırır</div>
+        <p class="text">Yüz tanıma yazılımı, yüzünüzdeki ana hatları ve noktaları sayısal bir modele dönüştürür. Böylece cihazınız sizi saniyenin küçük bir kısmında tanır ve kilidi açar.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🎧</span> Sana özel öneriler</div>
+        <p class="text">Netflix ve Spotify gibi hizmetler, izleme/dinleme geçmişinizi, atlama davranışınızı ve zamanlamaları analiz eden yapay zekâ algoritmalarıyla size özel listeler oluşturur.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">📲</span> Sosyal medya akışınızı bir AI şekillendirir</div>
+        <p class="text">Instagram, TikTok ve X; beğenileriniz, izleme süreleriniz ve etkileşimlerinizi öğrenerek akışınızı sürekli kişiselleştirir ve sizi platformda daha uzun tutmayı hedefler.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">✉️</span> Spam filtreleri küçük yapay zekâlardır</div>
+        <p class="text">E-postalar içerik, gönderen, bağlantılar ve geçmiş davranışlara göre taranır; şüpheli olanlar otomatik olarak spam klasörüne gönderilir.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🗺️</span> Google Haritalar ve trafik tahminleri</div>
+        <p class="text">Trafik tahminleri, anonim konum verileri, hız bilgileri ve yol olaylarını bir araya getirip anlık analiz yapan yapay zekâ ile oluşturulur; bu yüzden çok isabetlidir.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">✍️</span> Yazım denetleyicileri sizi öğrenir</div>
+        <p class="text">Grammarly gibi araçlar yazı stilinizi, sık kullandığınız ifadeleri ve hataları öğrenerek daha uygun öneriler sunar; zamanla size özel hale gelir.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🚗</span> Araçlardaki güvenlik sistemleri</div>
+        <p class="text">Şeritten sapma uyarısı, otomatik frenleme ve çarpışma öncesi sistemler; kameralar, radar ve yapay zekâ kombinasyonuyla çevreyi algılar ve riskleri azaltır.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🎙️</span> Akıllı ev asistanlarının dili</div>
+        <p class="text">Alexa, Google Asistan gibi cihazlar, doğal dil işleme (NLP) yöntemleri sayesinde konuşmanızı anlar, komutlarınızı çözümler ve yanıt üretir.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🛒</span> E-ticaret önerilerinin arkasındaki AI</div>
+        <p class="text">“Bu ürünü alanlar bunları da aldı” türü öneriler, milyonlarca alışveriş verisinden desen çıkaran yapay zekâ modelleriyle üretilir.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🏦</span> Bankaların dolandırıcılık tespiti</div>
+        <p class="text">Banka sistemleri harcama düzeninizi öğrenir; olağandışı bir hareket görüldüğünde sizi uyaran ve işlemi durduran yapay zekâ sistemleri çalışır.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">💸</span> Dinamik fiyatlandırma</div>
+        <p class="text">Araç kiralama ve bilet satışlarında fiyatlar talebe göre anlık ayarlanır; şirketler bu ayarlamayı yapay zekâ ile otomatikleştirir.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🦯</span> Görme engelliler için “gören uygulamalar”</div>
+        <p class="text">Cihaz kameralarıyla çekilen görüntüler yapay zekâ tarafından analiz edilip metin ve nesne tanımları sesli olarak aktarılır; günlük yaşamı kolaylaştırır.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🤖</span> Tesla ve otonom sürüş</div>
+        <p class="text">Otonom sürüş sistemleri çevresini saniyede birçok kez tarar; kameralar, lidar ve modeller birlikte çalışarak sürüş kararları alır.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">📞</span> Çağrı merkezlerinde yapay zekâ</div>
+        <p class="text">Bazı merkezler, aradığınız konuya göre sizi doğru departmana yönlendiren konuşma anlayan yapay zekâ botları kullanır.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🔎</span> Google otomatik tamamlama nasıl çalışır?</div>
+        <p class="text">Yazarken çıkan öneriler popüler aramalar, bölgesel trendler ve sizin geçmiş aramalarınızın birleşimiyle tahmin edilir; arka planda bir yapay zekâ çalışır.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">📸</span> Fotoğraf etiketleme ve yüz tanıma</div>
+        <p class="text">Sosyal ağlar fotoğraf içindeki yüzleri analiz ederek tanınan kişilerle eşleştirme önerileri sunar; bu işlem yüz tanıma modelleriyle yapılır.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">⛅</span> Hava tahmini ve yapay zekâ</div>
+        <p class="text">Modern hava durumu modelleri büyük veri ve yapay zekâ kullanarak çok değişkenli atmosfer verilerini işler; bu sayede tahminler daha isabetli olur.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">✉️</span> Gmail Akıllı Yanıt</div>
+        <p class="text">Gmail içeriği analiz ederek kısa, uygun cevap önerileri üretir; bu özellik arka planda çalışan küçük bir yapay zekâ modelidir.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🍽️</span> Restoranlarda yapay zekâ destekli sipariş</div>
+        <p class="text">Bazı restoranlarda, tablet tabanlı sistemler müşterinin tercihlerini öğrenip önerilerde bulunur ve sipariş akışını hızlandırır.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🗣️</span> Google Asistan’ın konuşma yeteneği</div>
+        <p class="text">“Arkadaşınla ara” gibi komutları anlayabilmesi, konuşma verileriyle eğitilmiş doğal dil işleme modellerinin sonucudur.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">📈</span> 2025: Öğrencilerin AI kullanımı</div>
+        <p class="text">2025 itibarıyla öğrencilerin önemli bir kısmı ödev, araştırma ve dil pratiği için yapay zekâ destekli araçları günlük olarak kullanıyor.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🛡️</span> Siber güvenlik: hızlı büyüyen alan</div>
+        <p class="text">Dijitalleşme arttıkça siber güvenlik uzmanlarına olan talep de büyüyor; 2030’a doğru bu alan kritik bir iş gücü ihtiyacı doğuracak.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🧮</span> Veri bilimcilerin işleme gücü</div>
+        <p class="text">Günümüz veri araçlarıyla bir veri bilimcisi dakikalar içinde çok büyük veri setlerini işleyebilir; bu, geleneksel kayıtların ötesinde bir hızdır.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🇹🇷</span> Türkiye ve teknoloji girişimleri</div>
+        <p class="text">Türkiye, son yıllarda girişimcilik ekosistemini büyüterek teknoloji start-up’larına ev sahipliği yapıyor ve küresel arenada daha görünür hale geliyor.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🌐</span> İnternetteki bilgi patlaması</div>
+        <p class="text">Dijital verinin büyük bölümü son yıllarda üretildi; sosyal medya, sensörler ve mobil uygulamalar sayesinde veri hacmi katlanarak artıyor.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🛰️</span> Uydu görüntüleri ve AI</div>
+        <p class="text">Uydu verileri yapay zekâ ile otomatik sınıflandırılarak tarım, çevre ve afet yönetimi gibi alanlarda hızla kullanılıyor.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🏙️</span> Akıllı şehir ışıkları</div>
+        <p class="text">Trafik yoğunluğunu anlık ölçen sistemler, sinyal sürelerini optimize ederek şehir içi akışı iyileştirir; bu işlem çoğunlukla yapay zekâ tabanlıdır.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🧬</span> Yapay zekâ ve genetik</div>
+        <p class="text">AI, DNA verilerini hızla analiz ederek genetik araştırmaları hızlandırıyor; bazı hastalıkların tespiti ve tedavi planlamasına katkı sağlıyor.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🎮</span> Oyunlarda adaptif yapay zekâ</div>
+        <p class="text">Modern oyunlardaki NPC’ler (oyuncu dışı karakterler), oyuncunun davranışlarını öğrenip karşılık veren adaptif yapay zekâ sistemlerine sahip.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🔊</span> Ses klonlama ve etik</div>
+        <p class="text">Kısa ses kayıtlarıyla gerçekçi ses klonları üretilebiliyor; bu teknoloji fırsatlar sunarken kötüye kullanım riskleri de taşıyor.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">⚡</span> Enerji ve kesinti tahmini</div>
+        <p class="text">Şebeke verileri ve hava tahminleri birleştirilip yapay zekâ ile işlenerek elektrik kesintileri ve talep dalgalanmaları önceden tahmin edilebiliyor.</p>
+      </article>
+
+      <article class="card" tabindex="0">
+        <div class="title"><span class="emoji">🌱</span> Tarımda AI ve dronlar</div>
+        <p class="text">Dronlardan gelen görüntüler yapay zekâyla analiz edilerek bitki hastalıkları, sulama ihtiyaçları ve verim tahmini erken safhada tespit edilebiliyor.</p>
+      </article>
+
+    </section>
+
+    <footer>
+      Hazırlayan: Vetu's • İstersen bu sayfayı PDF'e dönüştürüp A4 baskıya uygun hâle getirebilirim.
+    </footer>
+  </div>
+</body>
+</html>
